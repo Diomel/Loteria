@@ -13,17 +13,9 @@
         android:id="@+id/etName"
         android:layout_width="384dp"
         android:hint="Name"
-        android:layout_height="48dp"
+        android:layout_height="53dp"
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toTopOf="@+id/activity_main"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        android:layout_marginRight="38dp"
-        android:layout_marginEnd="38dp"
-        tools:layout_constraintRight_creator="1" />
+        app:layout_constraintTop_toTopOf="@+id/activity_main" />
 
     <EditText
         android:layout_width="384dp"
@@ -32,8 +24,8 @@
         android:id="@+id/etUsername"
         android:hint="Username"
         android:layout_height="53dp"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        app:layout_constraintTop_toBottomOf="@+id/etName" />
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintRight_toRightOf="@+id/etName" />
 
     <EditText
         android:layout_width="384dp"
@@ -42,8 +34,9 @@
         android:ems="10"
         android:id="@+id/etPassword"
         android:hint="Password"
-        app:layout_constraintLeft_toLeftOf="@+id/etUsername"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/etName" />
 
     <EditText
         android:layout_width="384dp"
@@ -53,7 +46,7 @@
         android:layout_height="53dp"
         android:hint="Age"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintRight_toRightOf="@+id/etPassword" />
+        app:layout_constraintRight_toRightOf="@+id/etUsername" />
 
     <Button
         android:text="Register"
@@ -61,5 +54,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/bRegitster"
         app:layout_constraintTop_toBottomOf="@+id/etAge"
-        app:layout_constraintRight_toRightOf="@+id/etPassword" />
+        app:layout_constraintRight_toRightOf="@+id/etAge" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:relativeBegin="20dp" />
 </android.support.constraint.ConstraintLayout>
